@@ -21,7 +21,7 @@
     </body>XML
 </html>
 ```
-##### **Exemplo de códigos HTML**
+##### **Exemplo de códigos XML**
 ```xml
 <?xml version="1.0"?>
 <mensagem>
