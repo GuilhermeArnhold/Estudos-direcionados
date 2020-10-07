@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 # Estudos
 ## O que são linguagens de marcação?
+=======
+# **O que são linguagens de marcação?**
+>>>>>>> ba155edb20cc83022dba8286349c3fbf9be7a796
 * É um sistema moderno para anotação de um texto de modo que ele seja sintaticamente distinguível
 * Elas são utilizadas para definir formatos,maneiras de exibição e padrões em um documento.
 * Normalmente, não possuem estruturas de controle.
 * Elas utilizam marcadores ou tags, o sistema identifica a tag e reconhece de que modo exibir o conteúdo.
+<<<<<<< HEAD
 ## Quais as mais comuns?
 * São elas, HTML,XHTML,SGML e XML.
 ## Onde são usadas?
 * São usadas na industria editorial para marcar a formatação, porém, pode ser usada para criar sites, documentos, textos, livros e mensagens. 
 ## Exemplo de códigos HTML
+=======
+## **Quais as mais comuns?**
+* São elas, HTML,XHTML,SGML e XML.
+### **Onde são usadas?**
+* São usadas na industria editorial para marcar a formatação, porém, pode ser usada para criar sites, documentos, textos, livros e mensagens. 
+#### **Exemplo de códigos HTML**
+>>>>>>> ba155edb20cc83022dba8286349c3fbf9be7a796
 ```html 
 <!DOCTYPE HTML>
 <html lan ="pt-br">
@@ -22,7 +34,11 @@
     </body>XML
 </html>
 ```
+<<<<<<< HEAD
 ## Exemplo de códigos XML
+=======
+##### **Exemplo de códigos XML**
+>>>>>>> ba155edb20cc83022dba8286349c3fbf9be7a796
 ```xml
 <?xml version="1.0"?>
 <mensagem>
@@ -32,6 +48,7 @@
     <texto>Olá, o trem passará às 15h, não esqueça.</texto>
 </mensagem> 
 ```
+<<<<<<< HEAD
 ## HTML 5 Tags
 * `<!DOCTYPE>`: Todo arquivo html deve iniciar com essa declaração, não é uma tag do HTML e tem como função informar ao browser sobre qual tipo de documento que se trata.
 *Exemplo:
@@ -121,3 +138,5 @@
     </body>
 <\html>
 ```
+=======
+>>>>>>> ba155edb20cc83022dba8286349c3fbf9be7a796
