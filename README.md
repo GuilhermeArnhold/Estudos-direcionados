@@ -121,3 +121,430 @@
     </body>
 <\html>
 ```
+
+* `<p>`: Define um parágrafo, o navegador adiciona uma linha em branco antes de cada elemento p.
+ ```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <p>Um parágrafo.</p>
+        <p>Outro parágrafo</p>
+    </body>
+<\html>
+```
+* `<br>`: Insere uma quebra de linha, é uma tag que não tem fechamento.
+ ```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <p>Bem</p><br><p>Vindo</p>
+    </body>
+<\html>
+```
+* `<hr>`: É uma "linha" que separa conteúdos ou define uma mudança em documentos HTML.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p> HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.. 
+        </p>
+    </body>
+<\html>
+```
+* `<!-->`...`<-->`: Utilizada para inserir comentários, não são exibidos nos navegadores. É possível utilizar para comentar seu código e pode ajuda-lo em outro momento quando você for editar seu código.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p> HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        </p>
+    </body>
+<\html>
+```
+* `<abbr>`: Define uma abreviação ou acrônimo quando passado o mouse sobre o elemento.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p> HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. 
+        </p>
+        <abbr title = "World Wide Web">WWW</abbr> commonly know as the Web.
+    </body>
+<\html>
+```
+* `<adress>`: Utilizado para informar o contato do autor/criador do documento ou artigo, o contato pode ser o endereço de email, URL, número do telefone...
+Esse elemento geralmente está em itálico e os navegadores sempre adicionarão uma quebra de linha antes e depois de cada elemento adress.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p> HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.. 
+        </p>
+        <abbr title = "World Wide Web">WWW</abbr> commonly know as the Web.
+        <address>
+            Escrito por: Guilherme.
+            Telefone: 99999999
+            Cidade: São Paulo - Brasil
+        </address>
+    </body>
+<\html>
+```
+* `<adress>`: Transforma o texto em negrito. Deve ser utilizado como ultimo recurso, quando nenhuma outra tag é apropriada.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        </p>
+        <abbr title = "World Wide Web">WWW</abbr> commonly know as the Web.
+        <b>Texto em negrito</b>
+        <address>
+            Escrito por: Guilherme.
+            Telefone: 99999999
+            Cidade: São Paulo - Brasil
+        </address>
+    </body>
+<\html>
+```
+* `<bdi>`: Não é suportado em todos os navegadores, é mais utilizado no caso de línguas árabes nas quais possuem a escrita de trás para frente.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        </p>
+        <abbr title = "World Wide Web">WWW</abbr> commonly know as the Web.
+        <b>Texto em negrito</b>
+        <address>
+            Escrito por: Guilherme.
+            Telefone: 99999999
+            Cidade: São Paulo - Brasil
+        </address>
+        <ul>
+            <li>Usuário João: 60 pontos</li>
+            <li>Usuário<bdi>Maria</bdi>: 80 pontos</li>
+            <li>Usuário <bdi>إيان</bdi>: 90 pontos</li>
+        </ul>
+    </body>
+<\html>
+```
+* `<bdo>`: Substitui a direção do texto(inverte).
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        </p>
+        <abbr title = "World Wide Web">WWW</abbr> commonly know as the Web.
+        <b>Texto em negrito</b>
+        <address>
+            Escrito por: Guilherme.
+            Telefone: 99999999
+            Cidade: São Paulo - Brasil
+        </address>
+        <ul>
+            <li>Usuário João: 60 pontos</li>
+            <li>Usuário<bdi>Maria</bdi>: 80 pontos</li>
+            <li>Usuário <bdi>إيان</bdi>: 90 pontos</li>
+            <bdo dir="rtl"> Texto </bdo>
+        </ul>
+    </body>
+<\html>
+```
+* `<cite>`: Define o título de um trabalho criativo como um livro, um poema, um som... O nome de uma pessoa não é um título de um trabalho, o texto dentro da tag fica em itálico.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        </p>
+        <p><cite>The movie</cite> by Guilherme Arnhold.</p>
+    </body>
+<\html>
+```
+* `<code>`: Essa tag é utilizada para inserir trechos de código.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        </p>
+        <p><cite>The movie</cite> by Guilherme Arnhold.</p>
+        <code>background-color</code>
+    </body>
+<\html>
+```
+* `<del>`: Define o texto deletado do documento, os navegadores geralmente inserem uma linha sobre esse texto.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        <p> Eu gosto de <del>ler</del> <ins>música.</ins>
+        </p>
+    </body>
+<\html>
+```
+* `<dfn>`: Especifica um termo que será definido com o conteúdo. O pai mais proximo do dfn deve conter a explicação/definição do termo.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML(abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        <p> 
+            <dfn>WWW</dfn>Significa em português rede de alcance mundial, também conhecida como Web ou WWW. World Wide Web é um sistema de documentos em hipermídia que são interligados e executados na Internet.
+        </p>
+    </body>
+<\html>
+```
+* `<em>`: É utilizada para enfatizar/destacar um texto. o conteúdo é transformado para itálico.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML(abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        <p>We need <em>you</em></p>
+    </body>
+<\html>
+```
+* `<i>`: Frequentemente utilizado para indicar um termo técnico, uma frase de outra língua, um nome de um návio... É utilizado quando nenhum outro elemento é apropriado, o texto é transformado em itálico.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML(abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        <p>We need <em>you</em></p>
+    </body>
+<\html>
+```
+* `<ins>`: Insere um texto no documento, os navegadores geralmente sublinham o texto inserido. É utilizado junto com a tag del.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <!--
+        Este é um comentário.
+        -->
+        <p>Bem</p><br><p>Vindo</p>
+        <hr>
+        <p>HTML(abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+        <p>We need <em>you</em></p>
+        <p>O site é <del>velho</del> <ins>novo</ins>
+    </body>
+<\html>
+``` 
+* `<kbd>`: É usado para para definir uma entrada de teclado.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <p>Bem</p><br><p>Vindo</p>
+        <p>Utilize <kbd>Ctrl</kbd> + <kbd>A </kbd>para selecionar tudo.</p>
+    </body>
+<\html>
+``` 
+* `<mark>`: Marca/destaca um texto.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+    To Buy
+        <ul>
+            <li>
+            <mark>Café</mark><br>
+            </li>
+            <li>
+            <mark>Leite</mark><br>
+            </li>
+            <li>
+            <mark>Frutas</mark>
+            </li>
+        </ul>
+    </body>
+<\html>
+```
+* `<meter>`: Realiza uma medição de uma faixa conhecida. Não deve ser utilizada para mostrar o progresso, para isso temos a tag progress.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+    </body>
+<\html>
+```
+* `<pre>`: Define um texto pré formatado, com fonte de largura fixa preservando os espaços e quebras de linhas. O texto é exibido exatamente como no código fonte html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <pre>O texto é formatado    exatamente como no código fonte html.
+        </pre>
+    </body>
+<\html>
+```
+* `<progress>`: Deve ser adicionado com a tag label para melhor visualização e acessibilidade. Representa o progresso de uma determinada tarefa.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    <\head>
+    <body>
+        <label for="file">Downloading progress:</label>
+        <progress id="file" value="32" max="100"> 32% </progress>
+    </body>
+<\html>
+```
+
+
+
+
+
+
+
