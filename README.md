@@ -777,3 +777,44 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>
 </html>
 ```
+* `<form>`: É utilizada para criar uma formulário html para entradas do usuário.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <form action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>
+```
+* `<input>`: Especifica onde o usuário pode inserir dados, é o elemento mais importante do form element.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <form action="/action_page.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="fname" name="nome"><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="lname" name="sobrenome"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+```
+
+
+
