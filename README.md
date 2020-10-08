@@ -41,11 +41,11 @@
     <head>
         <title>Html 5</title>
         <h1>Bem vindo!</h1>
-    <\head>
+    </head>
     <body>
         conteúdo
     </body>
-<\html>
+</html>
 ```
 * `<html>`: Todo documento html é inserido dentro desta tag, quando finalizado ela é fechada. Ou seja, ela contém todos os outros elementos dentro dela. 
 ```html
@@ -54,11 +54,11 @@
     <head>
         <title>Html 5</title>
         <h1>Html</h1>
-    <\head>
+    </head>
     <body>
         Este site foi criado para teste.
     </body>
-<\html>
+</html>
 ```
 * `<head>`: É inserido entre a tag html e a do body, contém dentro dela metadatas que podem definir o titulo do documento, o estilo e scripts.
 ```html
@@ -67,12 +67,12 @@
     <head>
         <title>Html 5</title>
         <h1>Calculadora</h1>
-    <\head>
+    </head>
     <body>
         <h2>Bem vindo usuário</h2>
         <p>Criei este site para você calcular.</p>
     </body>
-<\html>
+</html>
 ```
 * `<title>`: Insere um título ao documento, deve ser somente texto. É mostrado na aba da página, é necessário em documentos html. As recomendações são que não seja longo, algo entre uma ou duas palavras de tamanho entre 50 e 60 caracteres.  
 ```html
@@ -81,12 +81,12 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <h2>Testando</h2>
         <p>Este site foi criado para teste.</p>
     </body>
-<\html>
+</html>
 ```
 * `<body>`: Define o corpo do documento, contém outras tags do html como headings, paragraphs, images, hiperlink,tables,lists.
  ```html
@@ -95,14 +95,14 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <p><a href="Google.com">Conheça nosso site.</a></p>
         <h2>Testando</h2>
         <p>Este site foi criado para teste.</p>
         <h3>Olá</h3>
     </body>
-<\html>
+</html>
 ```
 * `<h1>` to `<h6>` : Definem os títulos, sendo 1 o principal e diminui sua relevancia conforme aumenta seu número, ou seja 6 o menos relevante ou um subtítulo. Apenas um h1 pode ser usado por página deve-se observar a hierarquia afim de uma boa estruturação e uso dessas tags.
  ```html
@@ -111,7 +111,7 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <h2>Titulo 2</h2>
         <h3>Titulo 3</h3>
@@ -119,7 +119,7 @@
         <h5>Titulo 5</h5>
         <h6>Titulo 6</h6>
     </body>
-<\html>
+</html>
 ```
 
 * `<p>`: Define um parágrafo, o navegador adiciona uma linha em branco antes de cada elemento p.
@@ -129,12 +129,12 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <p>Um parágrafo.</p>
         <p>Outro parágrafo</p>
     </body>
-<\html>
+</html>
 ```
 * `<br>`: Insere uma quebra de linha, é uma tag que não tem fechamento.
  ```html
@@ -143,11 +143,11 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <p>Bem</p><br><p>Vindo</p>
     </body>
-<\html>
+</html>
 ```
 * `<hr>`: É uma "linha" que separa conteúdos ou define uma mudança em documentos HTML.
 ```html
@@ -156,14 +156,14 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <p>Bem</p><br><p>Vindo</p>
         <hr>
         <p> HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.. 
         </p>
     </body>
-<\html>
+</html>
 ```
 * `<!-->`...`<-->`: Utilizada para inserir comentários, não são exibidos nos navegadores. É possível utilizar para comentar seu código e pode ajuda-lo em outro momento quando você for editar seu código.
 ```html
@@ -172,7 +172,7 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -182,7 +182,7 @@
         <p> HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
         </p>
     </body>
-<\html>
+</html>
 ```
 * `<abbr>`: Define uma abreviação ou acrônimo quando passado o mouse sobre o elemento.
 ```html
@@ -191,7 +191,7 @@
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -202,7 +202,7 @@
         </p>
         <abbr title = "World Wide Web">WWW</abbr> commonly know as the Web.
     </body>
-<\html>
+</html>
 ```
 * `<adress>`: Utilizado para informar o contato do autor/criador do documento ou artigo, o contato pode ser o endereço de email, URL, número do telefone...
 Esse elemento geralmente está em itálico e os navegadores sempre adicionarão uma quebra de linha antes e depois de cada elemento adress.
@@ -212,7 +212,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -228,7 +228,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             Cidade: São Paulo - Brasil
         </address>
     </body>
-<\html>
+</html>
 ```
 * `<adress>`: Transforma o texto em negrito. Deve ser utilizado como ultimo recurso, quando nenhuma outra tag é apropriada.
 ```html
@@ -237,7 +237,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -254,7 +254,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             Cidade: São Paulo - Brasil
         </address>
     </body>
-<\html>
+</html>
 ```
 * `<bdi>`: Não é suportado em todos os navegadores, é mais utilizado no caso de línguas árabes nas quais possuem a escrita de trás para frente.
 ```html
@@ -263,7 +263,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -285,7 +285,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <li>Usuário <bdi>إيان</bdi>: 90 pontos</li>
         </ul>
     </body>
-<\html>
+</html>
 ```
 * `<bdo>`: Substitui a direção do texto(inverte).
 ```html
@@ -294,7 +294,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -317,7 +317,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <bdo dir="rtl"> Texto </bdo>
         </ul>
     </body>
-<\html>
+</html>
 ```
 * `<cite>`: Define o título de um trabalho criativo como um livro, um poema, um som... O nome de uma pessoa não é um título de um trabalho, o texto dentro da tag fica em itálico.
 ```html
@@ -326,7 +326,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -337,7 +337,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         </p>
         <p><cite>The movie</cite> by Guilherme Arnhold.</p>
     </body>
-<\html>
+</html>
 ```
 * `<code>`: Essa tag é utilizada para inserir trechos de código.
 ```html
@@ -346,7 +346,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -358,7 +358,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p><cite>The movie</cite> by Guilherme Arnhold.</p>
         <code>background-color</code>
     </body>
-<\html>
+</html>
 ```
 * `<del>`: Define o texto deletado do documento, os navegadores geralmente inserem uma linha sobre esse texto.
 ```html
@@ -367,7 +367,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -378,7 +378,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p> Eu gosto de <del>ler</del> <ins>música.</ins>
         </p>
     </body>
-<\html>
+</html>
 ```
 * `<dfn>`: Especifica um termo que será definido com o conteúdo. O pai mais proximo do dfn deve conter a explicação/definição do termo.
 ```html
@@ -387,7 +387,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -399,7 +399,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <dfn>WWW</dfn>Significa em português rede de alcance mundial, também conhecida como Web ou WWW. World Wide Web é um sistema de documentos em hipermídia que são interligados e executados na Internet.
         </p>
     </body>
-<\html>
+</html>
 ```
 * `<em>`: É utilizada para enfatizar/destacar um texto. o conteúdo é transformado para itálico.
 
@@ -409,7 +409,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -419,7 +419,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p>HTML(abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
         <p>We need <em>you</em></p>
     </body>
-<\html>
+</html>
 ```
 * `<i>`: Frequentemente utilizado para indicar um termo técnico, uma frase de outra língua, um nome de um návio... É utilizado quando nenhum outro elemento é apropriado, o texto é transformado em itálico.
 ```html
@@ -428,7 +428,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -438,7 +438,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p>HTML(abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
         <p>We need <em>you</em></p>
     </body>
-<\html>
+</html>
 ```
 * `<ins>`: Insere um texto no documento, os navegadores geralmente sublinham o texto inserido. É utilizado junto com a tag del.
 ```html
@@ -447,7 +447,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <!--
         Este é um comentário.
@@ -458,7 +458,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p>We need <em>you</em></p>
         <p>O site é <del>velho</del> <ins>novo</ins>
     </body>
-<\html>
+</html>
 ``` 
 * `<kbd>`: É usado para para definir uma entrada de teclado.
 ```html
@@ -467,12 +467,12 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <p>Bem</p><br><p>Vindo</p>
         <p>Utilize <kbd>Ctrl</kbd> + <kbd>A </kbd>para selecionar tudo.</p>
     </body>
-<\html>
+</html>
 ``` 
 * `<mark>`: Marca/destaca um texto.
 ```html
@@ -481,7 +481,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
     To Buy
         <ul>
@@ -496,7 +496,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             </li>
         </ul>
     </body>
-<\html>
+</html>
 ```
 * `<meter>`: Realiza uma medição de uma faixa conhecida. Não deve ser utilizada para mostrar o progresso, para isso temos a tag progress.
 ```html
@@ -505,12 +505,12 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <label for="disk_c">Disk usage C:</label>
         <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
     </body>
-<\html>
+</html>
 ```
 * `<pre>`: Define um texto pré formatado, com fonte de largura fixa preservando os espaços e quebras de linhas. O texto é exibido exatamente como no código fonte html.
 ```html
@@ -519,32 +519,261 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
         <pre>O texto é formatado    exatamente como no código fonte html.
         </pre>
     </body>
-<\html>
+</html>
 ```
 * `<progress>`: Deve ser adicionado com a tag label para melhor visualização e acessibilidade. Representa o progresso de uma determinada tarefa.
-
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
-    <\head>
+    </head>
     <body>
-        <label for="file">Downloading progress:</label>
+        <label for="file">Progresso:</label>
         <progress id="file" value="32" max="100"> 32% </progress>
     </body>
-<\html>
+</html>
 ```
+* `<q>`:É utilizado para citações curtas, coloca o texto em aspas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <q>O que não provoca minha morte faz com que eu fique mais forte.</q>
+    </body>
+</html>
+```
+* `<rp>`: É utilizado junto com ruby para mostrar textos em navegadores que não suportam ruby, esse elemento insere parênteses ao redor do texto.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <ruby>
+                漢<rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+            </ruby>
+        </p>
+    </body>
+</html>
+```
+* `<rt>`: É utilizado junto com o elemento ruby e rp, define uma explicação ou pronuncia de caracteres do leste asiático.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <ruby>
+                漢<rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+            </ruby>
+        </p>
+    </body>
+</html>
+```
+* `<ruby>`: Essa tag especifica uma anotação ruby. Uma anotação ruby é um texto pequeno, anexado ao texto principal para indicar a pronuncia ou significado dos caracteres. É frequentemente usado em publicações japonesas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <ruby>
+                漢<rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>
+            </ruby>
+        </p>
+    </body>
+</html>
+```
+* `<s>`: Especifica um texto que não é mais correto, algo que não se aplica mais(que se modificou). O texto será tachado com uma linha.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <s>Bolas de futebol por apenas 50 reais.</s>
+            Acabou, não temos mais disponível!
+        </p>
+    </body>
+</html>
+```
+* `<samp>`: Define um texto como a saída de um programa de computador em um documento, o navegador exibe na fonte monoespaçada padrão.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <s>Bolas de futebol por apenas 50 reais.</s>
+            Acabou, não temos mais disponível!
+        </p>
+    </body>
+</html>
+```
+* `<small>`: Define um texto pequeno.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <small> Este é um pequeno texto</small>
+        </p>
+    </body>
+</html>
+```
+* `<strong>`: Define um texto importante, o navegador destaca o texto em negrito. Para um texto sem importância se usa a tag b.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            <strong>Cuidado com o cão!</strong>
+        </p>
+    </body>
+</html>
+```
+* `<sub>`: Define um texto subscrito com uma fonte pequena. 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            Dióxido de carbono<sub>CO2</sub>
+        </p>
+    </body>
+<html>
+```
+* `<sup>`: Define um texto sobrescrito que aparece com uma fonte pequena.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>
+            World Wide Web<sup>WWW</sup>
+        </p>
+    </body>
+</html>
+```
+* `<template>`: Usado com javascript, permite esconder um conteúdo ao carregar a página.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <button onclick="showContent()">Show hidden content</button>
 
+        <template>
+            <h2>Flower</h2>
+            <img src="img_white_flower.jpg" width="214" height="204">
+        </template>
 
-
-
-
-
-
+        <script>
+            function showContent() {
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);}
+        </script>
+    </body>
+</html>
+```
+* `<time>`: Define um horário e uma data, é utilizado para que os navegadores possam adicionar lembretes de datas por meio do calendário do usuário.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p> Eu tenho uma festa para ir
+        <time datetime="2020-10-24 10:00"> no dia das crianças.
+        </time>
+        </p>
+    </body>
+</html>
+```
+* `<u>`: Representa um texto não articulado com estilo diferente do texto normal, geralmente palavras com erros ortográficos ou nomes proprios em chinês. O conteúdo dentro da tag u, é sublinhado pelo navegador.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>não<u>mecha</u></p>
+    </body>
+</html>
+```
+* `<var>`: Define uma variavel em um programa ou uma expressão matematica. O conteúdo fica em itálico.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p><var>b</var> x <var>a</var> = 5</p>
+    </body>
+</html>
+```
+* `<wbr>`: Especifica onde em um texto poderia adicionar uma quebra de linha. Quando uma linha é muito longa, o navegador quebra automaticamente e pode quebrar em um lugar incorreto. Por isso, usa-se o wbr.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+        <p><b>Note:</b> The wbr element is not supported in Internet Explorer 11 (or earlier).</p>
+    </body>
+</html>
+```
