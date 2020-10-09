@@ -940,7 +940,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>
 </html>
 ```
-* `<fieldset>`: Cria uma legenda para a tag fieldset.
+* `<legend>`: Cria uma legenda para a tag fieldset.
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -959,7 +959,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>
 </html>
 ```
-* `<fieldset>`: Cria uma lista com opções pré definidas.
+* `<datalist>`: Cria uma lista com opções pré definidas.
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
