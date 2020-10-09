@@ -815,6 +815,185 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>
 </html>
 ```
-
-
-
+* `<textarea>`: É utilizado para definir uma inserção de texto maior pelo usuário, como para coletar comentários.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <textarea id="linguaPortuguesa" name="linguaPortuguesa" rows="5" cols="50">
+            A Língua Portuguesa é falada tanto em Portugal, quanto no Brasil e em outros diversos países ao redor do planeta. Assim sendo, falar este idioma pode abrir uma série de oportunidades  pessoais e até mesmo profissionais.
+        </textarea>
+    </body>
+</html>
+```
+* `<button>`: Cria um botão para interação com o usuário.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <button type="button"> Clique aqui!</button>
+    </body>
+</html>
+```
+* `<select>`: Cria uma caixa de seleção com varias opções a serem escolhidas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <label for="cor">Escolha uma cor:</label>
+        <select name="cor" id="cor">
+        <option value="branco">Branco</option>
+         <option value="verde">Verde</option>
+        <option value="laranja">Laranja</option>
+        <option value="preto">Preto</option>
+  </select>
+    </body>
+</html>
+```
+* `<optgroup>`: Separa em grupo as opções da caixa de seleção, utilizado junto com a tag select. Quando há um grande numero de opções os grupos facilitam para maneja-las.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <label for="camisa">Escolha uma camisa:</label>
+        <select name="camisas" id="camisas">
+            <optgroup label ="Grêmio">
+                <option value="geromel">Camisa 3 - Pedro Geromel </option>
+                <option value="kannemann">Camisa 4 - Walter Kannemann</option>
+            </optgroup>
+            <optgroup label ="Barcelona">
+                <option value="messi">Camisa 10 - Lionel Messi</option>
+                <option value="coutinho">Camisa 14 - Phillipe Coutinho</option>
+            </optgroup>
+        </select>
+    </body>
+</html>
+```
+* `<option>`: Define uma opção em uma lista de seleção. Geralmente utilizada junto com a tag select.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <label for="camisa">Escolha uma camisa:</label>
+        <select name="camisas" id="camisas">
+            <option value="geromel">Camisa 3 - Pedro Geromel </option>
+            <option value="kannemann">Camisa 4 - Walter Kannemann</option>
+         </select>
+    </body>
+</html>
+```
+* `<label>`: Cria um rótulo para os elementos
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p> Escolha a cor desejada: </p>
+        <label for="cor">Cor:</label>
+        <input type="color" name="cordacamisa"  id="cor">
+    </body>
+</html>
+```
+* `<fieldset>`: Desenha uma caixa em volta dos elementos, agrupa os elementos em um formulário.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" name="telefone">
+        </fieldset>
+    </body>
+</html>
+```
+* `<fieldset>`: Cria uma legenda para a tag fieldset.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+        </fieldset>
+    </body>
+</html>
+```
+* `<fieldset>`: Cria uma lista com opções pré definidas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <label for="esportes">Escolha seu esporte:</label>
+        <input list="esportes" name="esporte" id="esporte">
+        <datalist id="esportes">
+            <option value="Futebol">
+            <option value="Volei">
+            <option value="Handebol">
+            <option value="Natação">
+            <option value="Atletismo">
+        </datalist>
+    </body>
+</html>
+```
+* `<output>`: É utilizado para representar o resultado de um cálculo.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+        </form>
+    </body>
+</html>
+```
