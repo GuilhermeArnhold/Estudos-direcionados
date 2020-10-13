@@ -1041,3 +1041,156 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>
 </html>
 ```
+* `<canvas>`: É utilizado para desenhar gráficos por meio de scripts, a tag é transparente e é apenas um container para gráficos, é necessário um script para desenhar os gráficos. Mesmo que o navegador não suporte a tag canvas e o javascript esteja desabilitado o conteúdo será exibido.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <canvas id="myCanvas">
+            Seu navegador não suporta a tag canvas
+        </canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#black";
+            ctx.fillRect(0, 0, 100, 100);
+        </script>
+    </body>
+</html>
+```
+* `<figcaption>`: Define uma legenda para uma imagem.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <figure>
+            <img src="https://i2.wp.com/marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png" alt="homemprotestando" style="width:100%">
+            <figcaption>Fig 1 - Um homem de máscara protestando.</figcaption>
+        </figure>
+    </body>
+</html>
+```
+* `<figure>`: Especifica conteúdo independente como fotos, diagramas, ilustrações...
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <figure>
+            <img src="https://i2.wp.com/marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png" alt="homemprotestando" style="width:100%">
+            <figcaption>Fig 1 - Um homem de máscara protestando.</figcaption>
+        </figure>
+    </body>
+</html>
+```
+* `<picture>`: Oferece maior flexibilidade para manipular imagens, podendo aumentar ou diminuir a imagem conforme a janela de visualização. A tag picture contém a tag source e img.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <picture>
+            <source media="(min-width:650px)" srcset="https://i2.wp.com/marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png">
+            <source media="(min-width:465px)" srcset="http://www.fundosanimais.com/imagens-imagens-lobos-jpg">
+            <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+    </body>
+</html>
+```
+* `<svg>`: Cria um container para gráficos vetoriais escalonaveis. Ou seja, é possível desenhar formas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" /></svg>
+     </body>
+</html>
+```
+* `<audio>`: É usado para inserir som ao documento, o texto dentro da tag audio só é exibido quando o navegador não suportar a tag audio, esse elemento possui uma ou mais tags source.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <audio controls>
+            <source src="audio.ogg" type="audio/ogg">
+            <source src="audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento audio.
+        </audio>
+     </body>
+</html>
+```
+* `<source>`: Com ela é possível especificar ao navegador arquivos alternativos conforme sua janela de visualização ou suporte, o navegador irá escolher a primeira source compatível.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <audio controls>
+            <source src="audio.ogg" type="audio/ogg">
+            <source src="audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento audio.
+        </audio>
+     </body>
+</html>
+```
+* `<track>`: Especifica faixas de texto para as tags audio ou video, é usado para especificar legendas ou outros arquivos contendo texto que devem ser visiveis durante a reprodução.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video width="320" height="240" controls>
+            <source src="forrest_gump.mp4" type="video/mp4">
+            <source src="forrest_gump.ogg" type="video/ogg">
+            <track src="fgsubtitles_en.vtt" kind="legendas" srclang="en" label="English">
+            <track src="fgsubtitles_no.vtt" kind="legendas" srclang="no" label="Norwegian">
+        </video>
+     </body>
+</html>
+``` 
+* `<video>`: Usado para inserir video em um documento, essa tag contém um ou mais tag sources e o navegador escolhe a primeira que possui suporte. O texto entre a tag e o seu fechamento apenas é exibido quando o navegador não suportar essa tag.
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg">
+            Seu navegador não suporta a tag de video.
+        </video>
+     </body>
+</html> 
+``` 
+
