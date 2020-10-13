@@ -1178,6 +1178,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
 </html>
 ``` 
 * `<video>`: Usado para inserir video em um documento, essa tag contém um ou mais tag sources e o navegador escolhe a primeira que possui suporte. O texto entre a tag e o seu fechamento apenas é exibido quando o navegador não suportar essa tag.
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
