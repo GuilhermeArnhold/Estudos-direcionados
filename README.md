@@ -997,3 +997,47 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>
 </html>
 ```
+* `<iframe>`: Cria um quadro, um frame. É utilizado para incorporar outros documentos a um documento HTML. É uma boa prática incluir um atributo titulo para o frame.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+      <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+    </body>
+</html>
+```
+* `<img>`: Insere uma imagem em uma página HTML, a imagem não é inserida na página e sim vinculada a ela. Esse elemento necessita dois outros elementos, o SRC que especifica o caminho da imagem e o alt que descreve a imagem caso ela não puder ser exibida.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+      <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+    </body>
+</html>
+```
+* `<map>`: Define um mapa de imagem, ou seja, uma imagem com áreas clicáveis.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+      <img src="workplace.jpg" alt="areadetrabalho" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="computador" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="telefone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="xicara de café" href="coffee.htm">
+        </map>
+    </body>
+</html>
+```
