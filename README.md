@@ -1019,7 +1019,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <h1>Estudando</h1>
     </head>
     <body>
-      <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+       <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> 
     </body>
 </html>
 ```
