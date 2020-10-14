@@ -1194,4 +1194,185 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
      </body>
 </html> 
 ``` 
+* `<a>`: Define um hiperlink que leva o usuário a outra página, o elemento href é utilizado para indicar o destino.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <a href="https://google.com"> Visite a página do google.</a>
+     </body>
+</html> 
+``` 
+* `<link>`: Define uma relação entre o documento e um recurso externo.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <link rel="stylesheet" href="styles.css">
+     </body>
+</html> 
+``` 
+* `<nav>`: Define links de navegação, destina-se apenas ao bloco principal de links de navegação.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/python/">Python</a>
+        </nav>
+     </body>
+</html> 
+``` 
+* `<ul>`: Define uma lista sem organização, utilizada junto com a tag li.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <ul>
+        <li>Batata</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        </ul>
+     </body>
+</html> 
+``` 
+* `<ol>`: Define uma lista ordenada, pode ser numérica. ou alfabética, utilizada junto com a tag li. É possível indicar em que número ou letra iniciar a lista.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <ol>
+        Lista de selecionados:
+        <li>João</li>
+        <li>Maria</li>
+        <li>Lucas</li>
+        </ol>
+     </body>
+</html> 
+``` 
+* `<li>`: Define um item da lista, é utilizado com as tags ol,ul e menu.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <ol>
+        Lista de selecionados:
+        <li>João</li>
+        <li>Maria</li>
+        <li>Lucas</li>
+        </ol>
+     </body>
+</html> 
+``` 
+* `<dl>`: Uma lista de descrição, é utilizada junto com dt e dd.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <dl>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+        <dt>Milk</dt>
+        <dd>Bebida gelada</dd>
+        </dl>
+     </body>
+</html> 
+``` 
+* `<dt>`: Define um item, um nome em uma lista de descrição. 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <dl>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+        <dt>Milk</dt>
+        <dd>Bebida gelada</dd>
+        </dl>
+     </body>
+</html> 
+``` 
+* `<dd>`: Descreve um item ou nome e uma lista de descrição.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <dl>
+        <dt>Café</dt>
+        <dd>Bebida quente</dd>
+        <dt>Milk</dt>
+        <dd>Bebida gelada</dd>
+        </dl>
+     </body>
+</html> 
+``` 
+* `<table>`: Define uma tabela HTML. É utilizada com as tags tr,th e td.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Mês</th>
+                <th>Dia</th>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Feveiro</td>
+                <td>28</td>
+            </tr>
+        </table>
+     </body>
+</html> 
+``` 
+
+
+
+
 
