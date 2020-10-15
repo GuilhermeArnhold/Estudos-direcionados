@@ -1349,6 +1349,11 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+    </style>
     <head>
         <title>Html 5</title>
         <h1>Estudando</h1>
@@ -1365,12 +1370,446 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             </tr>
             <tr>
                 <td>Feveiro</td>
-                <td>28</td>
+                <td>28</td> 
             </tr>
         </table>
      </body>
 </html> 
 ``` 
+* `<caption>`: Define uma legenda para uma tabela.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <table>
+            <caption>Mes e dia</caption>
+            <tr>
+                <th>Mês</th>
+                <th>Dia</th>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Feveiro</td>
+                <td>28</td> 
+            </tr>
+        </table>
+     </body>
+</html> 
+``` 
+* `<th>`: Cria uma célula de cabeçalho, contém informações do cabeçalho.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+    </style>
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <table>
+            <caption>Legenda</caption>
+            <tr>
+                <th>Mês</th>
+                <th>Dia</th>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Feveiro</td>
+                <td>28</td> 
+            </tr>
+        </table>
+     </body>
+</html> 
+``` 
+* `<tr>`: Define uma linha para uma tabela.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+    </style>
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Mês</th>
+                <th>Dia</th>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Feveiro</td>
+                <td>28</td> 
+            </tr>
+        </table>
+     </body>
+</html> 
+``` 
+* `<td>`: Define uma célula de dados na tabela html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Mês</th>
+                <th>Dia</th>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Feveiro</td>
+                <td>28</td> 
+            </tr>
+        </table>
+     </body>
+</html> 
+``` 
+* `<thead>`: É utilizada para agrupar o conteúdo do cabeçalho na tabela.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+    </style>
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Dia</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>21</td>
+                </tr>       
+                <tr>
+                    <td>Feveiro</td>
+                    <td>28</td> 
+                </tr>
+        </table>
+     </body>
+</html> 
+``` 
+* `<tbody>`: Agrupa o conteúdo do corpo do html em uma tabela.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+</style>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Dia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>21</td>
+                </tr> 
+            </tbody>      
+                <tr>
+                    <td>Feveiro</td>
+                    <td>28</td> 
+                </tr>
+        </table>
+     </body>
+</html> 
+``` 
+* `<tfoot>`: Agrupa o conteúdo do rodapé de uma tabela html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+</style>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Dia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>21</td>
+                </tr> 
+            </tbody> 
+            <tfoot>     
+                <tr>
+                    <td>Feveiro</td>
+                    <td>28</td> 
+                </tr>
+            </tfoot> 
+        </table>
+     </body>    
+</html> 
+``` 
+* `<col>`: Especifica as propriedades de cada coluna, pode ser utilizado para personalizar as colunas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+</style>
+    <body>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:blue">
+                <col style="background-color:green">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Dia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>21</td>
+                </tr> 
+            </tbody> 
+            <tfoot>     
+                <tr>
+                    <td>Feveiro</td>
+                    <td>28</td> 
+                </tr>
+            </tfoot> 
+        </table>
+     </body>    
+</html> 
+``` 
+* `<colgroup>`: Especifica um grupo de um ou mais colunas de uma tabela para formatar. 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <style>
+        table, th, td {
+         border: 2px solid black;
+        }
+</style>
+    <body>
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:blue">
+                <col style="background-color:green">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Dia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>21</td>
+                </tr> 
+            </tbody> 
+            <tfoot>     
+                <tr>
+                    <td>Feveiro</td>
+                    <td>28</td> 
+                </tr>
+            </tfoot> 
+        </table>
+     </body>    
+</html> 
+``` 
+* `<style>`: É utilizada para definir um estilo CSS para um documento.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <style>
+        p {color: blue;}
+</style>
+    <body>
+       <p> Bem vindo </p>
+       </body>    
+</html> 
+``` 
+* `<div>`:  Define uma divisão, seção de um documento html. É utilizada como um container para elementos html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <div class="div">
+            <h2>Usuário</h2>
+            <p> Bem vindo </p>
+       </div>
+       </body>    
+</html> 
+``` 
+* `<span>`: É um container que é utilizado para marcar a parte de um texto ou documento. 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <style>
+    .div
+    {
+    text-align: center;
+    background-color:  blue; 
+    border: 5px black;
+    }
+    </style>
+    <body>
+        <p>Eu gosto da cor <span style="color:blue;font-weight:bold">azul</span> mas meu irmão prefere <span style="color:red;font-weight:bold">vermelho.</span></p>
+       </body>    
+</html> 
+``` 
+* `<header>`: Um container para um conteúdo introdutório ou um conjunto de links de navegação.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <article>
+            <header>
+                <h1>Cabeçalho</h1>
+                <p>Criado por Guilherme</p>
+                <p>Texto aqui</p>
+            </header>
+            <p>Lorem Ipsum dolor set amet....</p>
+        </article>
+    </body>    
+</html> 
+``` 
+* `<footer>`: Define um rodapé para um documento HTML.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <article>
+            <header>
+                <h1>Cabeçalho</h1>
+                <p>Criado por Guilherme</p>
+                <p>Texto aqui</p>
+            </header>
+            <p>Lorem Ipsum dolor set amet....</p>
+        </article>
+        <footer>
+            <p> Autor: Guilherme Arnhold</p>
+            <a href="https://github.com/GuilhermeArnhold/Estudos-direcionados">Github</a></p>
+        </footer>
+    </body>    
+</html> 
+``` 
+* `<main>`: Especifica o conteúdo principal de um arquivo. Só pode haver uma tag main no documento html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+      <main>
+        <h1>Os dois maiores times do Rio Grande do Sul</h1>
+        <p> O Grêmio e o Internacional são os dois maiores times do Rio Grande do Sul.</p>
+        <article>
+            <h2>Grêmio</h2>
+            <p> Grêmio Foot-Ball Porto Alegrense (conhecido apenas por Grêmio e cujo acrônimo é FBPA) é um clube de futebol brasileiro da cidade de Porto Alegre, no Rio Grande do Sul, fundado em 15 de setembro de 1903 por Candido Dias da Silva. Suas cores são azul, preto e branco. O clube tem como alcunhas Imortal Tricolor, Tricolor dos Pampas, Tricolor Gaúcho, Rei de Copas e Clube de Todos.
+            Já foi campeão da Copa Libertadores da América em três ocasiões (o que o torna o clube brasileiro com mais conquistas nesta competição, ao lado de São Paulo e Santos) e vice em duas outras oportunidades, sendo o único clube brasileiro a ter decidido a competição em quatro décadas diferentes. É o primeiro clube fora da região Sudeste a conquistar títulos de dimensão continental e mundial, sendo campeão da América e do Mundo em 1983. Também é bicampeão da Recopa Sul-Americana, tendo conquistado este torneio em todas as vezes em que o disputou. Conquistou ainda dois Campeonatos Brasileiros da Série A, um Campeonato Brasileiro da Série B, cinco Copas do Brasil e uma Supercopa do Brasil, além de uma Copa Sul e um Campeonato Sul-Brasileiro. No âmbito estadual, já foi campeão trinta e nove vezes do Campeonato Gaúcho, uma vez da Copa FGF e uma vez da Recopa Gaúcha.
+            Fonte: Wikipedia
+            </p>
+        </article>
+        <article>
+            <h2>Internacional</h2>
+            <p> O Sport Club Internacional (mais conhecido como Internacional ou Inter de Porto Alegre e popularmente pelo apelido de Colorado) é um clube multiesportivo brasileiro com sede na cidade de Porto Alegre, capital do Rio Grande do Sul. Foi fundado em 4 de abril de 1909, pelos irmãos Poppe, com o objetivo de ser uma instituição democrática e sem preconceitos. Tem como suas cores o vermelho e o branco e seus torcedores são conhecidos como colorados. Seu rival histórico é o Grêmio Foot-Ball Porto Alegrense, com quem disputa o Grenal, um dos maiores clássicos do mundo. No futebol, é um dos clubes mais bem-sucedidos do Brasil e das Américas, sendo o terceiro maior campeão internacional do país, com 7 conquistas oficiais, superado somente pelo Santos e São Paulo. Dentre suas maiores glórias no futebol, destacam-se as conquistas do Mundial de Clubes da FIFA e os dois títulos da Copa Libertadores da América em 2006 e 2010, além de uma Copa Sul-Americana (invicta), dois títulos da Recopa Sul-Americana e uma Copa Suruga Bank. A nível nacional, o Colorado é considerado tricampeão, tendo vencido três títulos do Campeonato Brasileiro, sendo o terceiro de forma invicta, além de uma Copa do Brasil, um Torneio Heleno Nunes e 45 títulos do Campeonato Gaúcho (atual recordista).
+            Fonte: Wikipedia
+            </p>
+        </article>
+    </main>
+    </body>    
+</html> 
+``` 
+
+
+
+
+
 
 
 
