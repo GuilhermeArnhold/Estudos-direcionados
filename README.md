@@ -1805,6 +1805,249 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>    
 </html> 
 ``` 
+* `<section>`: Cria uma seção em um documento.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+      <section>
+      <h2>WWW History</h2>
+      <p>O desenvolvimento da World Wide Web até 1991 começou em 1980, quando o inglês Tim Berners-Lee, um funcionário contratado do CERN - Organização Europeia para a Investigação Nuclear, na Suíça, desenvolveu o ENQUIRE, um projeto usado para reconhecer e armazenar associações de informações. Cada nova página no ENQUIRE deveria estar ligada a uma página existente.</p>
+      </section>
+      <section>
+      <h2>O ENIAC</h2>
+      <p>O mais popular dos gadgets assopra as velhinhas em  14 de fevereiro (1946). Há exatos 65 anos — data em que escrevo este artigo — os pesquisadores norte-americanos John Eckert e John Mauchly, da Electronic Control Company, revelavam ao mundo o primeiro computador eletrônico digital de larga escala, também conhecido como Electronic Numerical Integrator And Computer (que em bom português quer dizer Computador e Integrador Numérico Eletrônico) ou apenas ENIAC para os mais íntimos.</p>
+      </section>
+    </body>    
+</html> 
+``` 
+* `<article>`: Especifica conteúdo independente que deve fazer sentido por si só e é independente do resto do site, como exemplo podemos citar um post de um blog.
+ ```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome é um navegador desenvolvido pela google.</p>
+        </article>
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>É um navegador open source desenvolvido pela mozilla.</p>
+        </article>
+        <article>
+            <h2>Microsoft Edge</h2>
+            <p>É um navegador desenvolvido pela Microsoft.</p>
+        </article>
+    </body>    
+</html> 
+``` 
+* `<aside>`: Define um conteúdo além do conteúdo que é exibido, o conteúdo inserido deve estar indiretamente relacionado ao conteúdo circundante.
+ ```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>Minha familia e eu visitamos o Epcot center, o tempo estava ótimo e o parque é maravilhoso.</p>
+        <aside>
+            <h4>Epcot</h4>
+            <p>Epcot é o segundo dos quatro parques temáticos construídos no Walt Disney World em Bay Lake, Flórida, próximo a Orlando, Flórida, Estados Unidos.</p>
+        </aside>
+    </body>    
+</html> 
+``` 
+* `<details>`: Especifica conteúo adicional que o usuário pode abrir ou fechar.
+ ```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <details>
+            <summary>Epcot</summary>
+            <p>Epcot é o segundo dos quatro parques temáticos construídos no Walt Disney World em Bay Lake, Flórida, próximo a Orlando, Flórida, Estados Unidos.</p>
+        </details>
+    </body>    
+</html> 
+``` 
+* `<dialog>`: Define uma caixa de dialogo, ideal para criar popups.
+ ```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <dialog open> Bem vindo usuário</dialog>
+    </body>    
+</html> 
+``` 
+* `<summary>`: Cria um cabeçalho para os elementos da tag details, o cabeçalho quando clicado exibe o conteúdo.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <details>
+            <summary>Epcot</summary>
+            <p>Epcot é o segundo dos quatro parques temáticos construídos no Walt Disney World em Bay Lake, Flórida, próximo a Orlando, Flórida, Estados Unidos.</p>
+        </details>
+    </body>    
+</html> 
+``` 
+* `<data>`: É usada para adicionar uma tradução compreendida por máquina para processamento de dados.  
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <ul>
+            <li><data value="1001">Tomate</data></li>
+            <li><data value="1002">Batata</data></li>
+            <li><data value="1003">Alface</data></li>
+        </ul>
+    </body>    
+</html> 
+``` 
+* `<head>`: Cria um container para metadados, é inserido entre a tag html e body.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Html 5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p> Estou estudando HTML 5</p>
+    </body>    
+</html> 
+``` 
+* `<meta>`: Define metadata sobre o documento HTML, é inserida dentro da tag HTML e especifica a codificação de caracteres, o autor do documento e as palavras chaves.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta char-set="UTF-8">
+        <meta name="nome" content="Estudando HTML 5">
+        <meta name="palavrachave" content="HTML">
+        <meta name="autor" content="Guilherme Arnhold">
+    </head>
+    <body>
+        <p> Estou estudando HTML 5</p>
+    </body>    
+</html> 
+``` 
+* `<base>`: Define uma URL para todas as outras URLS no documento, a tag base deve possuir juntamente com ela a tag href que faz o redirecionamento. Só pode utilizar uma vez por documento.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <base href="https://www.w3schools.com/" target="_blank">>
+    </head>
+    <body>
+        <p><a href="tags/tag_base.asp">Página do google.</a></p>
+    </body>    
+</html> 
+``` 
+* `<script>`: Permite que seja inserido no documento HTML códigos de Javascript.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p id="teste"></p>
+        <script>
+            document.getElementById("teste").innerHTML = "Bem vindo ao site!";
+            alert("Este é um aviso!");
+        </script> 
+    </body>    
+</html> 
+``` 
+* `<noscript>`: Define um conteúdo alternativo que é exibido quando o navegador não suporta script ou o usuário desabilitou o suporte.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p id="teste"></p>
+        <script>
+            document.getElementById("teste").innerHTML = "Bem vindo ao site!";
+            alert("Este é um aviso!");
+        </script> 
+        <noscript>
+            Este navegador não possui suporte ao Javascript ou foi desativado pelo usuário.
+        </noscript>
+    </body>    
+</html> 
+``` 
+* `<embed>`: Define um container de um recurso externo como uma página da web, uma foto ou uma música.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <embed type="image/jpg" src="https://www.hypeness.com.br/1/2018/12/imagens-surreais.jpg" width="668" height="508">
+    </body>    
+</html> 
+``` 
+* `<object>`:  Representa um ponto de integração para uma aplicação externa ou conteúdo interativo um plug-in.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <object data="https://www.hypeness.com.br/1/2018/12/imagens-surreais.jpg"></object>
+    </body>    
+</html> 
+``` 
+* `<param>`: Define parametros de um elemento object.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <object data="horse.wav">
+        <param name="autoplay" value="true">
+</html> 
+``` 
+
+
+
+
 
 
 
