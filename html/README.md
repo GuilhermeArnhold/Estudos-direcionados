@@ -1,7 +1,6 @@
 # HTML 5
 ## HTML5 TAGS
 * `<!DOCTYPE>`: Todo arquivo html deve iniciar com essa declaração, não é uma tag do HTML e tem como função informar ao browser sobre qual tipo de documento que se trata.
-*Exemplo:
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -2115,12 +2114,16 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <h1>Estudando</h1>
     </head>
     <body>
-        <script src="demo_async.js" async></script>
+        <form action="/action_page.php" method="get" autocomplete="on">
+            Nome:<input type="text" name="nome"><br>
+            E-mail: <input type="email" name="email"><br>
+            <input type="submit">
+        </form>
     </body>
 </html> 
 ```
-* `autofocus`: 
-*  ```html
+* `autofocus`: Quando esse atributo estiver em um elemento, o elemento ganha foco quando a página carrega, ou seja podemos usar um exemplo de um formulário, quando a página carregar o usuário não precisará selecionar a caixa de texto para escrever, pois ela já estará selecionada.
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -2128,7 +2131,61 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <h1>Estudando</h1>
     </head>
     <body>
-        <script src="demo_async.js" async></script>
+        <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" autofocus><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit">
+</form>
     </body>
 </html> 
+```
+* `autoplay`: Quando estiver presente, inicia automaticamente um video ou áudio.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video controls autoplay>
+            <source src="https://www.youtube.com/watch?v=I_OKOsbVme8&list=RDI_OKOsbVme8&start_radio=1" type="video/mp4">
+            Seu navegador não suporta esse elemento de áudio.
+        </video>
+    </body>
+</html> 
+```
+* `charset`: Especifica a codificação de caracteres do documento HTML quando utilizado com a tag meta, diferentemente quando usado com a tag script se refere a codificação de um arquivo externo.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p>Teste</p>
+        </video>
+    </body>
+</html> 
+```
+* `checked`: É um atributo booleano, especifica que um elemento input deve ser pré selecionado quando a página carregar.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <input type="checkbox" name="objeto" value="Bola">Eu tenho uma bola<br>
+            <input type="checkbox" name="objeto" value="Carrinho" checked>Eu tenho um carrinho<br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
 ```
