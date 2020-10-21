@@ -2189,3 +2189,79 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         </form>
     </body>
 ```
+* `cite`: Especifica uma URL para um documento que explica a citação ou porque o texto foi inserido ou alterado.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <blockquote cite="https://pt.wikipedia.org/wiki/Google">
+       Google LLC é uma empresa multinacional de serviços online e software dos Estados Unidos. O Google hospeda e desenvolve uma série de serviços e produtos baseados na internet e gera lucro principalmente através da publicidade pelo AdWords. A Google é a principal subsidiária da Alphabet Inc.
+       </blockquote>
+    </body>
+``` 
+* `class`: Especifica um ou mais nomes de classe para o elemento, é utilizado pelo CSS e pelo JavaScript para fazer alterações nos elementos.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <blockquote cite="https://pt.wikipedia.org/wiki/Google">
+       Google LLC é uma empresa multinacional de serviços online e software dos Estados Unidos. O Google hospeda e desenvolve uma série de serviços e produtos baseados na internet e gera lucro principalmente através da publicidade pelo AdWords. A Google é a principal subsidiária da Alphabet Inc.
+       </blockquote>
+    </body>
+``` 
+* `cols`: Especifica a largura de uma área de texto. Seria a quantidade de colunas.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <textarea rows="4" cols="50">
+            Microsoft Corporation é uma empresa transnacional americana com sede em Redmond, Washington, que desenvolve, fabrica, licencia, apoia e vende softwares de computador, produtos eletrônicos, computadores e serviços pessoais
+        </textarea>
+    </body>
+``` 
+* `colspan`: Especifica o número de colunas de uma tabela.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        }
+    </style>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <table>
+            <tr>
+                <th>Nome</th>
+                <th>Numero</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <th>Guilherme</th>
+                <th>999999999</th>
+                <th>teste@gmail.com</th>
+            </tr>
+            <tr>
+    <td colspan="3">Bem vindo</td>
+  </tr>
+    </body>
+``` 
