@@ -2265,3 +2265,260 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
   </tr>
     </body>
 ``` 
+* `content`: Descreve o conteúdo de um elemento html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    </head>
+    <body>
+    </body>
+``` 
+* `contenditable`: Especifica quando o conteúdo de um elemento é editavel ou não.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <p contenteditable="true"> Este texto pode ser modificado.</p>
+    <p contenteditable="false"> Este texto não pode ser modificado.
+    </body>
+``` 
+* `controls`: É um atributo booleano, quando verdadeiro mostra os controles de áudio.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+         Seu navegador não suporta a tag audio.
+    </audio>
+    </body>
+``` 
+* `coords`: Especifica as coordenadas de uma área em um mapa, é utilizado junto com o atributo shape.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+         Seu navegador não suporta a tag audio.
+    </audio>
+    </body>
+```  
+* `data`: Especifica a URL do recurso a ser usado pelo objeto. 
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <object data="https://i2.wp.com/marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png?w=720&ssl=1)" width="300" height="200"></object>
+    </body>
+``` 
+* `data-*`: Armazena dados personalizados privados para a página. Esse atributo permite incorporar atributos de dados personalizados em todos elementos html.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <script>
+            function showDetails(animal) {
+            var animalType = animal.getAttribute("data-animal-type");
+            alert("O " + animal.innerHTML + " é um " + animalType + ".");}
+</script>
+    </head>
+    <body>
+        <ul>
+            <li onclick="showDetails(this)" id="passaro" data-animal-type="ave">Canário</li>
+            <li onclick="showDetails(this)" id="salmao" data-animal-type="peixe">Salmão</li>  
+            <li onclick="showDetails(this)" id="aranha" data-animal-type="aracnídeo">Escorpião-marrom</li>  
+        </ul>
+    </body> 
+``` 
+* `datetime`: Especifica a data e a hora que o texto foi deletado/inserido.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <ins datetime="2020-10-22"> Texto.</ins>
+        <del datetime="2020-10-22T10:00:00Z"> Texto deletado</del>
+    </body> 
+``` 
+* `default`: Atributo booleano, se o usuário não definir outra faixa a faixa que possui o default será utilizada.
+ ```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+            <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+        </video>
+    </body> 
+``` 
+* `defer`: Atributo booleano, utilizado para executar scripts externos quando a página termina de analisar. Utilizado com o atributo src.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <script src="demo_defer.js" defer></script>
+        <p id="p1">Hello World!</p>
+    </body> 
+``` 
+* `dir`: Especifica a direção do conteúdo do elemento
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p dir="rtl">Texto</p>
+    </body> 
+``` 
+* `dirname`: Permite o envio da direção do texto do campo de entrada.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="nome" name="nome" dirname="nome.dir">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+``` 
+* `disabled`: É um atributo booleano, quando utilizado desabilita o elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <button type="button" disabled>Clique aqui!</button>
+    </body>
+``` 
+* `download`: Especifica que quando o usuário clicar no hiperlink, um arquivo será baixado.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <a href="/images/myw3schoolsimage.jpg" download>
+        <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+        </a>
+    </body>
+```
+* `draggable`: Especifica quando um elemento é arrastável ou não.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+            #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;}
+        </style>
+        <script>
+            function allowDrop(ev) {
+            ev.preventDefault();}
+
+            function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);}
+
+            function drop(ev) {
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+            ev.preventDefault();}           
+        </script>
+    </head>
+    <body>
+       <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <p id="drag1" draggable="true" ondragstart="drag(event)">Arraste este texto para dentro do retângulo.</p>
+    </body>
+```
+* `enctype`: Especifica como os dados do formulário devem ser codificados quando enviados ao servidor. Só poder utilizado se o method for =post
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </body>
+```
+
+
+
+  
+  
