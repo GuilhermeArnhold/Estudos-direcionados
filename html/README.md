@@ -2511,12 +2511,184 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome"><br><br>
-            <label for="lname">Sobrenome:</label>
+            <label for="sobrenome">Sobrenome:</label>
             <input type="text" id="sobrenome" name="sobrenome"><br><br>
+            <input type="submit" value="Enviar">
+        </form> 
+    </body>
+```
+* `for`: Utilizado junto com o label, especifica qual elemento do formulário um rótulo está vinculado. Quando usado com o output, especifica a relação entre o resultado do cálculo e os elementos utilizados.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
+            <label for="homem">Homem</label>
+            <input type="radio" id="homem" name="gender" value="male"><br><br>
+            <label for="mulher">Mulher</label>
+            <input type="radio" id="mulher" name="gender" value="female"><br><br>
             <input type="submit" value="Submit">
         </form> 
     </body>
 ```
+* `form`: Especifica o formulário ao qual o elemento pertence.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+            <button type="submit">Enviar</button>
+            <button type="submit" formaction="/action_page2.php">Enviar para outra página</button>
+        </form>
+    </body>
+```  
+* `formaction`: Especifica para onde enviar os dados do formulário. É utilizado somente com a tag input ou button quando o type é =submit.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+            <button type="submit">Enviar</button>
+            <button type="submit" formaction="/action_page2.php">Enviar para outra página</button>
+        </form>
+    </body>
+```
+* `headers`: Especifica quais são as células de cabeçalho de uma tabela.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+            table,th,td{
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th id="nome">Nome</th>
+                <th id="telefone">Telefone</th>
+                <th id="email">Email</th>
+                <th id="idade">Idade</th>   
+            </tr>
+            <tr>
+                <th headers="nome">Guilherme</th>
+                <th headers="telefone">51999999999</th>
+                <th headers="email">teste@gmail.com</th>
+                <th headers="idade">18</th>   
+            </tr>
+        </table>
+    </body>
+```
+* `height`: Especifica a altura do elemento em pixels.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+            table,th,td{
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://computerworld.com.br/wp-content/uploads/2019/10/internet-completa-50-anos.jpg)" alt="Smiley face" height="300" width="350">
+    </body>
+```
+* `hidden`: Atributo booleano, quando presente o elemento fica oculto.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <p hidden>Parágrafo oculto</p>
+       <p> Parágrafo</p>
+    </body>
+```
+* `high`: Especifica o intervalo no medidor que é considerado o valor alto. Deve ser menor que o valor do atributo máximo e maior que o baixo e o minimo.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <p><label for="anna">Pontuação de Ana:</label>
+        <meter id="anna" min="0" low="40" high="90" max="100" value="95"></meter></p>
+        <p><label for="peter">Pontuação de Peter:</label>
+        <meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p>
+        <p><label for="linda">Pontuação de Linda:</label>
+        <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter>
+    </body>
+```
+* `href`: Quando utilizado com a tag a ou area especifica para qual página a url redireciona, quando utilizado com a tag base especifica a URL base para todos URLS de uma página. Por ultimo, com a tag link.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <p><label for="anna">Pontuação de Ana:</label>
+        <meter id="anna" min="0" low="40" high="90" max="100" value="95"></meter></p>
+        <p><label for="peter">Pontuação de Peter:</label>
+        <meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p>
+        <p><label for="linda">Pontuação de Linda:</label>
+        <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter>
+    </body>
+```
+* `hreflang`: Especifica a linguagem do documento linkado.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <p><a href="https://www.google.com" hreflang="pt-br">google.com</a></p>
+    </body>
+```
+
 
 
 
