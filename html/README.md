@@ -2688,6 +2688,200 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
        <p><a href="https://www.google.com" hreflang="pt-br">google.com</a></p>
     </body>
 ```
+* `http-equiv`: Fornece um cabeçalho http para informação do atributo content.  
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <p>Teste</p>
+    </body>  
+``` 
+* `id`: É utilizado para atribuir um ID para um documento HTML. O ID é utilizado para manipular o elemento por meio do Javascript e do CSS.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <h1 id="myHeader">Olá, mundo!</h1>
+        <style>
+        #myHeader{
+            color: blue;
+            backgroud: black;
+        }
+        </style>
+    </body>  
+``` 
+* `ismap`: É um atributo booleano, especifica que a imagem faz parte de um mapa de imagem do lado do servidor.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <a href="/action_page.php">
+            <img src="w3html.gif" alt="W3Schools.com" width="100" height="132" ismap>
+        </a>
+    </body>  
+``` 
+* `kind`: Especifica o tipo de trilha de texto.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en"         label="English">
+            <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+        </video>
+    </body>  
+``` 
+* `label`: Especifica o titulo da trilha de texto.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en"         label="English">
+            <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+        </video>
+    </body>  
+``` 
+* `lang`: Especifica a linguagem do conteúdo do elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p lang="en"> Hello!</p>
+    </body>  
+``` 
+* `list`: O atributo list se refere ao elemento <datalist> que contém opções pré definidas.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page.php" method="get">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+        </form>
+    </body>  
+``` 
+* `loop`: É um atributo booleano, indica que toda vez que o áudio terminar, começará novamente.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <audio controls loop>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </body>  
+``` 
+* `low`:  Especifica o intervalo que é considerado um valor baixo. Utilizado o elemento <meter>.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p><label for="anna">Pontuação de Ana:</label>
+        <meter id="anna" min="0" low="40" high="90" max="100" value="95"></meter></p>
+        <p><label for="peter">Pontuação de Peter:</label>
+        <meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p>
+        <p><label for="linda">Pontuação de Linda:</label>
+        <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter></p>
+    </body>  
+``` 
+* `max`: Especifica o valor máximo do elemento 
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <form action="/action_page.php">
+        <label for="datemax">Escolha uma data antes de 31/12/1979:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Escolha uma data depois de 02/01/2000:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        <label for="quantity">Quantidade (entre 1 e 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1"  max="5"><br><br>
+        <input type="submit">
+</form>
+    </body>  
+``` 
+* `maxlength`: Define o máximo de caracteres do elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <form action="/action_page.php">
+        Login: <input type="text" name="login" maxlength="15"><br>
+    <input type="submit" value="Submit">
+    </form>
+    </body>  
+``` 
+
 
 
 
