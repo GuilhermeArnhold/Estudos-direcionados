@@ -645,7 +645,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             Dióxido de carbono<sub>CO2</sub>
         </p>
     </body>
-<html>
+</html>
 ```
 * `<sup>`: Define um texto sobrescrito que aparece com uma fonte pequena.
 ```html
@@ -2188,6 +2188,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <input type="submit" value="Submit">
         </form>
     </body>
+</html> 
 ```
 * `cite`: Especifica uma URL para um documento que explica a citação ou porque o texto foi inserido ou alterado.
 ```html
@@ -2203,6 +2204,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
        Google LLC é uma empresa multinacional de serviços online e software dos Estados Unidos. O Google hospeda e desenvolve uma série de serviços e produtos baseados na internet e gera lucro principalmente através da publicidade pelo AdWords. A Google é a principal subsidiária da Alphabet Inc.
        </blockquote>
     </body>
+</html> 
 ``` 
 * `class`: Especifica um ou mais nomes de classe para o elemento, é utilizado pelo CSS e pelo JavaScript para fazer alterações nos elementos.
 ```html
@@ -2218,6 +2220,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
        Google LLC é uma empresa multinacional de serviços online e software dos Estados Unidos. O Google hospeda e desenvolve uma série de serviços e produtos baseados na internet e gera lucro principalmente através da publicidade pelo AdWords. A Google é a principal subsidiária da Alphabet Inc.
        </blockquote>
     </body>
+</html> 
 ``` 
 * `cols`: Especifica a largura de uma área de texto. Seria a quantidade de colunas.
 ```html
@@ -2233,6 +2236,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             Microsoft Corporation é uma empresa transnacional americana com sede em Redmond, Washington, que desenvolve, fabrica, licencia, apoia e vende softwares de computador, produtos eletrônicos, computadores e serviços pessoais
         </textarea>
     </body>
+</html> 
 ``` 
 * `colspan`: Especifica o número de colunas de uma tabela.
 ```html
@@ -2264,6 +2268,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <td colspan="3">Bem vindo</td>
   </tr>
     </body>
+</html> 
 ``` 
 * `content`: Descreve o conteúdo de um elemento html.
 ```html
@@ -2276,6 +2281,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </head>
     <body>
     </body>
+</html> 
 ``` 
 * `contenditable`: Especifica quando o conteúdo de um elemento é editavel ou não.
 ```html
@@ -2290,6 +2296,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <p contenteditable="true"> Este texto pode ser modificado.</p>
     <p contenteditable="false"> Este texto não pode ser modificado.
     </body>
+</html> 
 ``` 
 * `controls`: É um atributo booleano, quando verdadeiro mostra os controles de áudio.
 ```html
@@ -2307,6 +2314,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
          Seu navegador não suporta a tag audio.
     </audio>
     </body>
+</html> 
 ``` 
 * `coords`: Especifica as coordenadas de uma área em um mapa, é utilizado junto com o atributo shape.
 ```html
@@ -2324,6 +2332,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
          Seu navegador não suporta a tag audio.
     </audio>
     </body>
+</html> 
 ```  
 * `data`: Especifica a URL do recurso a ser usado pelo objeto. 
 ```html
@@ -2337,6 +2346,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <body>
         <object data="https://i2.wp.com/marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png?w=720&ssl=1)" width="300" height="200"></object>
     </body>
+</html> 
 ``` 
 * `data-*`: Armazena dados personalizados privados para a página. Esse atributo permite incorporar atributos de dados personalizados em todos elementos html.
 ```html
@@ -2359,6 +2369,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <li onclick="showDetails(this)" id="aranha" data-animal-type="aracnídeo">Escorpião-marrom</li>  
         </ul>
     </body> 
+</html> 
 ``` 
 * `datetime`: Especifica a data e a hora que o texto foi deletado/inserido.
 ```html 
@@ -2373,6 +2384,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <ins datetime="2020-10-22"> Texto.</ins>
         <del datetime="2020-10-22T10:00:00Z"> Texto deletado</del>
     </body> 
+</html> 
 ``` 
 * `default`: Atributo booleano, se o usuário não definir outra faixa a faixa que possui o default será utilizada.
  ```html 
@@ -2391,6 +2403,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
         </video>
     </body> 
+</html> 
 ``` 
 * `defer`: Atributo booleano, utilizado para executar scripts externos quando a página termina de analisar. Utilizado com o atributo src.
 ```html 
@@ -2405,6 +2418,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <script src="demo_defer.js" defer></script>
         <p id="p1">Hello World!</p>
     </body> 
+</html> 
 ``` 
 * `dir`: Especifica a direção do conteúdo do elemento
 ```html 
@@ -2417,7 +2431,8 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </head>
     <body>
         <p dir="rtl">Texto</p>
-    </body> 
+    </body>
+</html>  
 ``` 
 * `dirname`: Permite o envio da direção do texto do campo de entrada.
 ```html 
@@ -2435,6 +2450,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <input type="submit" value="Submit">
         </form>
     </body>
+</html> 
 ``` 
 * `disabled`: É um atributo booleano, quando utilizado desabilita o elemento.
 ```html 
@@ -2448,6 +2464,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <body>
         <button type="button" disabled>Clique aqui!</button>
     </body>
+</html> 
 ``` 
 * `download`: Especifica que quando o usuário clicar no hiperlink, um arquivo será baixado.
 ```html 
@@ -2463,6 +2480,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
         </a>
     </body>
+</html> 
 ```
 * `draggable`: Especifica quando um elemento é arrastável ou não.
 ```html 
@@ -2497,6 +2515,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <br>
         <p id="drag1" draggable="true" ondragstart="drag(event)">Arraste este texto para dentro do retângulo.</p>
     </body>
+</html> 
 ```
 * `enctype`: Especifica como os dados do formulário devem ser codificados quando enviados ao servidor. Só poder utilizado se o method for =post
 ```html 
@@ -2516,6 +2535,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <input type="submit" value="Enviar">
         </form> 
     </body>
+</html> 
 ```
 * `for`: Utilizado junto com o label, especifica qual elemento do formulário um rótulo está vinculado. Quando usado com o output, especifica a relação entre o resultado do cálculo e os elementos utilizados.
 ```html 
@@ -2535,6 +2555,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <input type="submit" value="Submit">
         </form> 
     </body>
+</html> 
 ```
 * `form`: Especifica o formulário ao qual o elemento pertence.
 ```html 
@@ -2555,6 +2576,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <button type="submit" formaction="/action_page2.php">Enviar para outra página</button>
         </form>
     </body>
+</html> 
 ```  
 * `formaction`: Especifica para onde enviar os dados do formulário. É utilizado somente com a tag input ou button quando o type é =submit.
 ```html 
@@ -2575,6 +2597,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <button type="submit" formaction="/action_page2.php">Enviar para outra página</button>
         </form>
     </body>
+</html> 
 ```
 * `headers`: Especifica quais são as células de cabeçalho de uma tabela.
 ```html 
@@ -2606,6 +2629,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             </tr>
         </table>
     </body>
+</html> 
 ```
 * `height`: Especifica a altura do elemento em pixels.
 ```html 
@@ -2624,6 +2648,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <body>
         <img src="https://computerworld.com.br/wp-content/uploads/2019/10/internet-completa-50-anos.jpg)" alt="Smiley face" height="300" width="350">
     </body>
+</html> 
 ```
 * `hidden`: Atributo booleano, quando presente o elemento fica oculto.
 ```html 
@@ -2638,6 +2663,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
        <p hidden>Parágrafo oculto</p>
        <p> Parágrafo</p>
     </body>
+</html> 
 ```
 * `high`: Especifica o intervalo no medidor que é considerado o valor alto. Deve ser menor que o valor do atributo máximo e maior que o baixo e o minimo.
 ```html 
@@ -2656,6 +2682,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p><label for="linda">Pontuação de Linda:</label>
         <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter>
     </body>
+</html> 
 ```
 * `href`: Quando utilizado com a tag a ou area especifica para qual página a url redireciona, quando utilizado com a tag base especifica a URL base para todos URLS de uma página. Por ultimo, com a tag link.
 ```html 
@@ -2674,6 +2701,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p><label for="linda">Pontuação de Linda:</label>
         <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter>
     </body>
+</html> 
 ```
 * `hreflang`: Especifica a linguagem do documento linkado.
 ```html 
@@ -2687,6 +2715,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <body>
        <p><a href="https://www.google.com" hreflang="pt-br">google.com</a></p>
     </body>
+</html> 
 ```
 * `http-equiv`: Fornece um cabeçalho http para informação do atributo content.  
 ```html 
@@ -2701,6 +2730,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <body>
        <p>Teste</p>
     </body>  
+</html> 
 ``` 
 * `id`: É utilizado para atribuir um ID para um documento HTML. O ID é utilizado para manipular o elemento por meio do Javascript e do CSS.
 ```html 
@@ -2720,6 +2750,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         }
         </style>
     </body>  
+</html> 
 ``` 
 * `ismap`: É um atributo booleano, especifica que a imagem faz parte de um mapa de imagem do lado do servidor.
 ```html 
@@ -2735,6 +2766,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <img src="w3html.gif" alt="W3Schools.com" width="100" height="132" ismap>
         </a>
     </body>  
+</html> 
 ``` 
 * `kind`: Especifica o tipo de trilha de texto.
 ```html 
@@ -2753,6 +2785,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
         </video>
     </body>  
+</html> 
 ``` 
 * `label`: Especifica o titulo da trilha de texto.
 ```html 
@@ -2771,6 +2804,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
         </video>
     </body>  
+</html> 
 ``` 
 * `lang`: Especifica a linguagem do conteúdo do elemento.
 ```html 
@@ -2783,7 +2817,8 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </head>
     <body>
         <p lang="en"> Hello!</p>
-    </body>  
+    </body> 
+</html>  
 ``` 
 * `list`: O atributo list se refere ao elemento <datalist> que contém opções pré definidas.
 ```html 
@@ -2808,6 +2843,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <input type="submit">
         </form>
     </body>  
+</html> 
 ``` 
 * `loop`: É um atributo booleano, indica que toda vez que o áudio terminar, começará novamente.
 ```html 
@@ -2825,6 +2861,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
             Seu navegador não suporta o elemento de áudio.
         </audio>
     </body>  
+</html> 
 ``` 
 * `low`:  Especifica o intervalo que é considerado um valor baixo. Utilizado o elemento <meter>.
 ```html 
@@ -2843,6 +2880,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <p><label for="linda">Pontuação de Linda:</label>
         <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter></p>
     </body>  
+</html> 
 ``` 
 * `max`: Especifica o valor máximo do elemento 
 ```html 
@@ -2864,6 +2902,7 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
         <input type="submit">
 </form>
     </body>  
+</html> 
 ``` 
 * `maxlength`: Define o máximo de caracteres do elemento.
 ```html 
@@ -2880,8 +2919,294 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     <input type="submit" value="Submit">
     </form>
     </body>  
+</html> 
 ``` 
+* `media`: Especifica para qual midia ou dispositivo o documento linkado é otimizado.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <p> Clique no sol</p>
+    <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" alt="Sun"
+        href="sun.htm" media="screen and (min-color-index:256)">
+    </map>
+    </body> 
+</html>  
+``` 
+* `method`: Especifica como enviar dados de formulário. 
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <p> Clique no sol</p>
+    
+    </body> 
+</html> 
+``` 
+* `min`: Especifica o valor minimo do elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <p><label for="ana">Pontuação de Ana:</label>
+        <meter id="ana" min="0" low="40" high="90" max="100" value="95"></meter></p>
+        <p><label for="peter">Pontuação de Peter:</label>
+        <meter id="peter" min="0" low="40" high="90" max="100" value="65"></meter></p><p><label for="linda">Pontuação de Linda:</label>
+        <meter id="linda" min="0" low="40" high="90" max="100" value="35"></meter></p>
+    </body> 
+</html> 
+``` 
+* `multiple`: É um atributo booleano, quando presente é possível inserir ou     selecionar mais que um valor.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+    <form action="/action_page.php">
+        <label for="carros">Escolha um carro:</label>
+        <select name="carros" id="carros" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="ford">Ford</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="fiat">Fiat</option>
+        </select>
+    </body> 
+</html> 
+``` 
+* `muted`: Atributo booleano, especifica que o áudio deve estar mutado.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video width="320" height="240" controls muted>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Seu navegador não suporta a tag de video.
+        </video>
+    </body> 
+</html> 
+``` 
+* `name`: Especifica o nome do elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <button name="subject" type="submit" value="HTML">HTML</button>
+        <button name="subject" type="submit" value="CSS">CSS</button>
+    </body>     
+</html> 
+``` 
+* `novalidate`: Especifica que os dados de entrada não devem ser válidados quando enviados.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <form action="/action_page.php" novalidate>
+            <label for="email">Insira seu email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit">
+        </form>
+    </body>     
+</html> 
+```
+* `onabort`: Define um script que rodará caso o carregamento é abortado.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body onafterprint="myFunction()">
+        Utilize as teclas CTRL+P para imprimir.
+       <script>
+            function myFunction() {
+            alert("O Documento está sendo impresso.");}
+       </script>
+    </body>     
+</html> 
+```
+* `onafterprint`: Dispara quando uma página é impressa ou caso a caixa de diálogo seja fechada.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body onafterprint="myFunction()">
+        Utilize as teclas CTRL+P para imprimir.
+       <script>
+            function myFunction() {
+            alert("O Documento está sendo impresso.");}
+       </script>
+    </body>     
+</html> 
+```
+* `onbeforeprint`: Dispara antes da caixa de dialogo de impressão aparecer.  
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body onbeforeprint="myFunction()">
+        Utilize as teclas CTRL+P para imprimir.
+       <script>
+            function myFunction() {
+            alert("O Documento será impresso.");}
+       </script>
+    </body>     
+</html> 
+```
+* `onbeforeunload`: Dispara quando o elemento será recarregado. Abre uma caixa de dialogo perguntando se o usuário tem certeza que gostaria de deixar a página. 
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body onbeforeprint="myFunction()">
+        Utilize as teclas CTRL+P para imprimir.
+       <script>
+            function myFunction() {
+            alert("O Documento será impresso.");}
+       </script>
+    </body>     
+</html> 
+```
+* `onblur`: Dispara quando o elemento perde o foco.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        Insira seu nome: <input type="text" name="name" id="name" onblur="myFunction()">
+        <script>
+            function myFunction() {
+            var x = document.getElementById("name");
+             x.value = x.value.toUpperCase();}
+        </script>
 
+    </body>     
+</html> 
+```
+* `oncanplay`: Dispara um script quando o navegador iniciar a reprodução da mídia.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <audio id="myAudio" controls oncanplay="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse elemento.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("Durante o áudio");}
+        </script> 
+    </body>     
+</html> 
+```
+* `oncanplaythrough`: Demonstra quando o navegador pode reproduzir o audio ou video sem parar para armazenar em buffer.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <audio id="myAudio" controls oncanplay="myFunction()">
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Seu navegador não suporta esse elemento.
+        </audio>
+        <script>
+            function myFunction() {
+            alert("Pode ser reproduzido sem parada para armazenamento em buffer.");}
+        </script> 
+    </body>     
+</html> 
+```
+* `onchange`: Dispara quando o valor do elemento é modificado. 
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+       <p>Selecione um carro.</p>
+        <select id="mySelect" onchange="myFunction()">
+            <option value="Audi">Audi
+            <option value="BMW">BMW
+            <option value="Mercedes">Mercedes
+            <option value="Volvo">Volvo
+        </select>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML = "Você selecionou " + x;}
+        </script>
+    </body>     
+</html> 
+```
 
 
 
