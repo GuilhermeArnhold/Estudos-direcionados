@@ -3207,9 +3207,165 @@ Esse elemento geralmente está em itálico e os navegadores sempre adicionarão 
     </body>     
 </html> 
 ```
+* `onclick`: Dispara quando clicado no elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <button onclick="myFunction()">Clique aqui</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Olá,mundo";
+}
+</script>
+    </body>     
+</html> 
+```
+* `oncontextmenu`: Dispara quando o usuário clica com o botão direito em um elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+            div {
+            background: yellow;
+            border: 1px solid black;
+            padding: 10px;}
+        </style>
+    </head>
+    <body>
+        <div oncontextmenu="myFunction()" contextmenu="mymenu">
+        <p>Clique com o botão direito na caixa!
+        <script>
+            function myFunction() {
+            alert("Você clicou com o botão direito.");}
+        </script>
+    </body>     
+</html> 
+```
+* `oncopy`: Dispara quando o usuário tenta copiar o texto.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <input type="text" oncopy="myFunction()" value="Tente copiar o texto."> <p id="demo"></p>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Você não deve copiar o texto!"}
+        </script>
+    </body>     
+</html> 
+```
+* `oncuechange`: Define um script para rodar quando a sugestão muda em um elemento. 
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video>
+            <track oncuechange="alert('cue changed')" />
+        </video>
+    </body>     
+</html> 
+```
+* `oncut`: Dispara quando o usuário tenta recortar o conteúdo do elemento. 
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <video>
+            <track oncuechange="alert('cue changed')" />
+        </video>
+    </body>     
+</html> 
+```
+* `ondblclick`: Dispara quando o usuário clicar duas vezes no elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+    </head>
+    <body>
+        <button ondblclick="myFunction()">Clique duas vezes sobre mim</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Olá,mundo!";}
+        </script>
+    </body>   
+</html> 
+```
+* `ondrag`: Dispara quando o elemento é arrastado.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+        .droptarget {
+            float: left; 
+            width: 100px; 
+            height: 35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;}
+</style>
+    </head>
+    <body>
+        <p>Arraste o elemento.:</p>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Me arraste!</p>
+        </div>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
+        <p style="clear:both;" id="demo"></p>
+        <script>
+        function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        }
 
+        function dragging(event) {
+            document.getElementById("demo").innerHTML = "O elemento p está sendo arrastado";
+        }
 
+        function allowDrop(event) {
+            event.preventDefault();
+        }
 
-  
-  
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            document.getElementById("demo").innerHTML = "O elemento p foi movido.";}
+            </script>
+    </body>   
+</html> 
+```
