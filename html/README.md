@@ -3369,3 +3369,56 @@ function myFunction() {
     </body>   
 </html> 
 ```
+* `ondragend`:  É disparado quando o usuário termina de arrastar um elemento.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+            .droptarget {
+                float: left; 
+                width: 100px; 
+                height: 35px;
+                margin: 15px;
+                padding: 10px;
+                border: 1px solid #aaaaaa;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Arraste os elementos entre os dois retângulos:</p>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Drag me!</p>
+        </div>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <p style="clear:both;" id="demo"></p>
+
+        <script>
+            function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+            document.getElementById("demo").innerHTML = "Começado a arrastar o elemento.";
+            }
+
+        function dragEnd(event) {
+            document.getElementById("demo").innerHTML = "Terminado de arrastar o elemento.";
+            }
+
+        function allowDrop(event) {
+            event.preventDefault();
+            }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </body>   
+</html> 
+```
