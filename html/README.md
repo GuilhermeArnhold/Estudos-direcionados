@@ -3392,7 +3392,7 @@ function myFunction() {
         <p>Arraste os elementos entre os dois retângulos:</p>
 
         <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Drag me!</p>
+        <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Me Arraste!</p>
         </div>
 
         <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -3422,3 +3422,235 @@ function myFunction() {
     </body>   
 </html> 
 ```
+* `ondragenter`: Dispara quando o elemento arrastável entra em uma zona.
+```html 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+        <h1>Estudando</h1>
+        <style>
+            .droptarget {
+                float: left; 
+                width: 100px; 
+                height: 35px;
+                margin: 15px;
+                padding: 10px;
+                border: 1px solid #aaaaaa;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Arraste o elemento entre os dois retângulos</p>
+
+        <div class="droptarget" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Me arraste!</p>
+        </div>
+
+        <div class="droptarget" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <p style="clear:both;" id="demo"></p>
+
+        <script>
+            function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        }
+
+        function dragEnter(event) {
+            if ( event.target.className == "droptarget" ) {
+            event.target.style.border = "3px dotted red";
+            document.getElementById("demo").innerHTML = "Entrou na zona";
+            }
+        }
+
+        function dragLeave(event) {
+        if ( event.target.className == "droptarget" ) {
+            event.target.style.border = "";
+            document.getElementById("demo").innerHTML = "Saiu da zona";
+        }
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+        }
+        </script>
+    </body>   
+</html> 
+```
+* `ondragleave`: Dispara quando um elemento arrastavel ou uma seleção de texto deixa a zona. 
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .droptarget {
+            float: left; 
+            width: 100px; 
+            height: 35px;
+            margin: 15px;
+            margin-right: 100px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+}
+        </style>
+    </head>
+    <body>
+        <p>Arraste o elemento entre os dois retângulos:</p>
+        <div class="droptarget" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Me arraste!</p>
+        </div>
+        <div class="droptarget" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <p style="clear:both;" id="demo"></p>
+        <script>
+            function dragStart(event) {
+                event.dataTransfer.setData("Text", event.target.id);
+                }
+
+            function allowDrop(event) {
+                event.preventDefault();
+                document.getElementById("demo").innerHTML = "O elemento P está sobre a zona.";
+                event.target.style.border = "4px dotted green";
+            }
+
+            function drop(event) {
+                event.preventDefault();
+                var data = event.dataTransfer.getData("Text");
+                event.target.appendChild(document.getElementById(data));
+                document.getElementById("demo").innerHTML = "O elemento p está deixando a zona";
+                }
+        </script>
+    </body>
+</html>
+```
+* `ondragover`: Dispara quando o elemento arrastável ou seleção de texto está sendo arrastado sobre um destino de soltar válido.
+```html 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #droptarget {
+            float: left; 
+            width: 200px; 
+            height: 35px;
+            margin: 55px;
+            margin-top: 155px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+            }
+        </style>
+    </head>
+    <body>
+    <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Me arraste para dentro do retângulo.</p>
+    <div id="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <p style="clear:both;" id="demo"></p>
+    <script>
+        function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        }
+        function allowDrop(event) {
+            event.preventDefault();
+            document.getElementById("demo").innerHTML = "The p element is OVER the droptarget.";
+            event.target.style.border = "4px dotted green";
+            }
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            document.getElementById("demo").innerHTML = "The p element was dropped.";
+            }
+    </script>
+    </body>
+</html>
+``` 
+* `ondragstart`: Dispara quando o usuário começa a arrastar um elemento ou seleção de texto.
+```html 
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+          .droptarget {
+            float: left; 
+            width: 100px; 
+            height: 35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+          }
+		</style>
+	</head>
+<body>
+    <p>Arraste o elemento p entre dois retângulos:</p>
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Me arraste!</p>
+    </div>
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <p style="clear:both;" id="demo"></p>
+        <script>
+            function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+            document.getElementById("demo").innerHTML = "Começado a mover o elemento";
+            }
+            function dragEnd(event) {
+            document.getElementById("demo").innerHTML = "Terminado de mover o elemento";
+            }
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+            function drop(event) {
+                event.preventDefault();
+                var data = event.dataTransfer.getData("Text");
+                event.target.appendChild(document.getElementById(data));
+                }
+        </script>
+    </body>
+</html>
+``` 
+* `ondrop`: Dispara quando o elemento é solto em um lugar válido.
+```html 
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+          .droptarget {
+            float: left; 
+            width: 100px; 
+            height: 35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+          }
+		</style>
+	</head>
+    <body>
+        <p>Arraste o elemento p entre os dois retângulos</p>
+        <div class="droptarget" ondrop="drop(event)" 		 					ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Drag me!<p>
+        </div>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <p style="clear:both;" id="demo"></p>
+        <script>
+            function dragStart(event) {
+                event.dataTransfer.setData("Text", event.target.id);
+                document.getElementById("demo").innerHTML = "Começado a mover o elemento";
+                }
+            function allowDrop(event) {
+                event.preventDefault();
+                }
+            function drop(event) {
+                event.preventDefault();
+                var data = event.dataTransfer.getData("Text");
+                event.target.appendChild(document.getElementById(data));
+                document.getElementById("demo").innerHTML = "O elemento foi solto.";
+                }
+        </script>
+    </body>
+</html>
+``` 
+  
